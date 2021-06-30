@@ -348,7 +348,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
-    libavservices_minijail_vendor
+    libavservices_minijail_vendor \
+    libcodec2_hidl@1.0.vendor:32 \
+    libcodec2_vndk.vendor:32
 
 # Net
 PRODUCT_PACKAGES += \
