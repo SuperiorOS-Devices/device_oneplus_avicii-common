@@ -1,1 +1,2 @@
 allow init hal_power_service:service_manager add;
+allow init adsprpcd_file:file mounton;
