@@ -1025,6 +1025,9 @@ else
     # set min_free_kbytes = 32MB
     echo 32768 > /proc/sys/vm/min_free_kbytes
 
+    #kswpad is bound to run on the small core of the CPU
+    echo 2 > /proc/sys/vm/kswapd_threads
+
     configure_zram_parameters
 
     configure_read_ahead_kb_values
