@@ -1,8 +1,9 @@
 [
   {
-    "repository"  : "hardware_oneplus",
+    "repository"  : "KakatkarAkshay/hardware_oneplus",
     "target_path" : "hardware/oneplus",
-    "remote"      : "pixel"
+    "branch"      : "twelve",
+    "remote"      : "github"
   },
   {
     "repository"  : "device_oneplus_extras",
