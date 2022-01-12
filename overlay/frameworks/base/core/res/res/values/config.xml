@@ -362,4 +362,6 @@
          non-zero. -->
     <integer name="config_defaultPeakRefreshRate">90</integer>
 
+    <!-- Whether to force enable multi resolution configuration for camera -->
+    <bool name="config_forceMultiResolution">true</bool>
 </resources>
