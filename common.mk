@@ -532,10 +532,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.disable_rescue=true
 endif
 
-# Enable skia reduceOpsTaskSplitting
-PRODUCT_PROPERTY_OVERRIDES += \
-    renderthread.skia.reduceopstasksplitting=true
-
 # Media
 PRODUCT_PACKAGES += \
     libmm-omxcore \
