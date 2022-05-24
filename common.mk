@@ -27,6 +27,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 $(call inherit-product, vendor/oneplus/sm7250-common/sm7250-common-vendor.mk)
 $(call inherit-product, $(LOCAL_PATH)/interfaces.mk)
 
+# GoogleCamera
+$(call inherit-product, packages/apps/GoogleCamera/config.mk)
+
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
@@ -196,13 +199,6 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
-
-PRODUCT_PACKAGES += \
-    GoogleCameraGo
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/GoogleCameraGo/permissions/com.google.android.GoogleCameraGo.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.google.android.GoogleCameraGo.xml \
-    $(LOCAL_PATH)/GoogleCameraGo/configs/hiddenapi-package-whitelist-GoogleCameraGo.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-package-whitelist-GoogleCameraGo.xml
 
 # Common init scripts
 PRODUCT_PACKAGES += \
