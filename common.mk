@@ -197,9 +197,6 @@ PRODUCT_PACKAGES += \
     Snap \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
-PRODUCT_PACKAGES += \
-    GCamGOPrebuilt
-
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.class_main.sh \
