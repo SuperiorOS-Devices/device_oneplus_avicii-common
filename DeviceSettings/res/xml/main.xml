@@ -25,14 +25,12 @@
 
         <SwitchPreference
             android:key="hbm"
-            android:icon="@drawable/ic_hbm_mode_icon"
             android:summary="@string/hbm_mode_summary"
             android:title="@string/hbm_mode_title"
             android:defaultValue="false" />
 
         <SwitchPreference
             android:key="auto_hbm"
-            android:icon="@drawable/ic_autohbm_mode_icon"
             android:summary="@string/auto_hbm_summary"
             android:title="@string/auto_hbm_title" />
 
@@ -53,21 +51,18 @@
 
         <SwitchPreference
             android:key="auto_refresh_rate"
-            android:icon="@drawable/ic_auto_refresh_icon"
             android:summary="@string/auto_refresh_rate_summary"
             android:title="@string/auto_refresh_rate_title"
             android:persistent="true" />
 
         <SwitchPreference
             android:key="refresh_rate"
-            android:icon="@drawable/ic_forced_refresh_icon"
             android:summary="@string/refresh_rate_summary"
             android:title="@string/refresh_rate_title"
             android:persistent="false" />
 
         <SwitchPreference
             android:key="fps_info"
-            android:icon="@drawable/ic_fps_overlay_icon"
             android:title="@string/fps_info_title"
             android:summary="@string/fps_info_summary"
             android:persistent="true" />
@@ -77,11 +72,15 @@
         android:key="audio"
         android:title="@string/audio_title">
 
+        <Preference
+            android:icon="@drawable/ic_info_outline_24dp"
+            android:persistent="false"
+            android:summary="@string/enable_dolby_info" />
+
         <SwitchPreference
             android:key="enable_dolby_atmos"
             android:summary="@string/enable_dolby_summary"
             android:title="@string/enable_dolby_title"
-            android:icon="@drawable/ic_dolby"
             android:defaultValue="false"
             android:persistent="true" />
 
@@ -89,7 +88,6 @@
             android:key="audio_dolby_atmos"
             android:title="@string/dolby_title"
             android:summary="@string/dolby_summary"
-            android:icon="@drawable/ic_dolby_atmos"
             android:dependency="enable_dolby_atmos"
             android:persistent="false">
             <intent
@@ -104,7 +102,6 @@
 
         <org.lineageos.device.DeviceSettings.CustomSeekBarPreference
             android:key="vib_strength"
-            android:icon="@drawable/ic_vibration_icon"
             android:title="@string/vib_strength_title_head"
             android:summary="@string/vib_strength_summary_head"
             android:persistent="true"
@@ -121,14 +118,13 @@
         <ListPreference
             android:key="nr_mode_switcher"
             android:defaultValue="2"
-            android:icon="@drawable/ic_5g"
             android:title="@string/nr_mode_switcher_title"
             android:summary="%s"
             android:entries="@array/nr_mode_switcher_entries"
             android:entryValues="@array/nr_mode_switcher_values" />
 
         <Preference
-            android:icon="@drawable/ic_info_outline"
+            android:icon="@drawable/ic_info_outline_24dp"
             android:summary="@string/nr_mode_switcher_warning" 
             android:persistent="false" />
     </PreferenceCategory>
