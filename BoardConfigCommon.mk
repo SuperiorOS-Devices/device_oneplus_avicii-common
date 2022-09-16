@@ -57,6 +57,8 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/
 TARGET_KERNEL_SOURCE := kernel/oneplus/avicii
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := vendor/lito-perf_defconfig
+TARGET_KERNEL_CLANG_VERSION := proton
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
