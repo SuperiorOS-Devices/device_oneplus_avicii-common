@@ -48,9 +48,11 @@
                 android:resource="@drawable/ic_settings_device" />
             <meta-data
                 android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.homepage" />
+                android:value="com.android.settings.category.ia.system" />
             <meta-data android:name="com.android.settings.summary"
                 android:resource="@string/device_summary" />
+	    <meta-data android:name="com.android.settings.order"
+                android:value="-255" />
         </activity>
 
         <activity android:name=".DeviceSettings" />
@@ -59,7 +61,7 @@
         <receiver 
             android:name="org.lineageos.device.DeviceSettings.Startup" 
             android:enabled="true">
-            <intent-filter android:priority="100" >
+            <intent-filter android:priority="1000" >
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
